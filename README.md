@@ -6,7 +6,7 @@
 
 ### Info
 Tampermonkey script. Tested on Firefox on Linux.  
-Redirects video source from Odysee to your local lbynet daemon.  
+Redirects video source on Odysee from your local lbynet daemon.  
 This is not perfect, but may be interesting.  
 Videos which have option to change quality, won't have that with this and video controls won't work on those videos.  
 
