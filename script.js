@@ -27,6 +27,7 @@ function setVideoSource(){
 
         if ( lastSrc != src && url){
            const data = '{"method":"get","params":{"uri": "lbry://'+url+'"}}';
+            //Send "get" command to local daemon, and get streaming_url from output.
            GM_xmlhttpRequest({method: "POST", url: server, data: data, onload: (response) => {
                let obj = JSON.parse(response.response);
                let streaming_url = obj.result.streaming_url;
@@ -37,6 +38,7 @@ function setVideoSource(){
             return;
         }
         console.log("looping")
+        //Does some looping sometimes so page won't need to be refreshed.(I hope)
         setTimeout(setVideoSource, 2000);
     // Retry on error, player may not always be available.
     } catch {
