@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name         hmmm
-// @require      http://code.jquery.com/jquery-3.4.1.min.js
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Use lbry-sdk to view videos on Odysee
